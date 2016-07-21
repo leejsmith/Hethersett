@@ -1,0 +1,53 @@
+@import 'functions';
+@import 'reset';
+@import 'thematic';
+
+// NEWS STYLING
+.category_list {
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+    &_item {
+        width: calc(100% - 3em);
+        display: block;
+        float: left;
+        position: relative;
+        display: block;
+        padding: 1em;
+        background: #efefef;
+        margin: 0 0.5em 1em 0.5em;
+        &_article {
+            img {
+                width: 100%;
+            }
+            .content_title {
+                min-height: 67px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include respond-to("mobilelandscape") {
+    .category_list {
+        &_item {
+            width: calc(50% - 3em);
+            min-height: 700px;
+        }
+    }
+    .entry-summary p {
+        min-height: 180px;
+    }
+}
+
+@include respond-to("tabletportrait") {
+    .category_list {
+        &_item {
+            width: calc(33.3% - 3em);
+            min-height: 700px;
+        }
+    }
+    .entry-summary p {
+        min-height: 180px;
+    }
+}

@@ -1,0 +1,420 @@
+body {
+  font-family: 'Asap', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p,
+span {
+  font-size: 16px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+.banner {
+  font-size: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner .header_logo {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 7.5%;
+}
+
+.banner .header_logo img {
+  width: 15%;
+}
+
+.banner .header_title {
+  top: 55px;
+  left: 30px;
+  position: absolute;
+  font-family: 'Righteous';
+  width: 100%;
+}
+
+.banner .header_title a {
+  position: relative;
+  color: #fff;
+  display: block;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.banner .header_title a span {
+  position: absolute;
+}
+
+.banner .header_title a .hethersett {
+  font-size: 30px;
+}
+
+.banner .header_title a .hawks {
+  font-size: 18px;
+  top: 30px;
+  left: 60px;
+}
+
+.banner .header_title a .csc {
+  font-size: 24px;
+  top: 45px;
+}
+
+.banner .header_est {
+  position: relative;
+  background: #fff;
+}
+
+.banner .header_est p {
+  font-size: 28px;
+  font-weight: 600px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.banner .header_jubilee {
+  position: relative;
+  background: #fff;
+}
+
+.banner .header_jubilee p {
+  font-size: 22px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.banner .banner_wave {
+  display: none;
+}
+
+.quick_links {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.quick_links .quick_search {
+  display: none;
+}
+
+.quick_links .quick_facebook,
+.quick_links .quick_search {
+  line-height: 32px;
+  font-size: 20px;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+}
+
+.quick_links .quick_facebook i,
+.quick_links .quick_search i {
+  font-size: 32px;
+  position: absolute;
+}
+
+.quick_links .quick_facebook span,
+.quick_links .quick_search span {
+  margin-left: 40px;
+}
+
+.search {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.search_wrapper {
+  font-size: 0;
+}
+
+.search_input,
+.search button {
+  background-color: #004ec4;
+  border: none;
+  padding: 0px 10px;
+  height: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.search_button {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.search .search_cancel {
+  display: none;
+}
+
+.mason--menu .main_menu_btn_open {
+  display: none;
+}
+
+.mason--menu .main_menu_btn_close {
+  display: block;
+}
+
+.mason--menu .menu {
+  top: 60px;
+}
+
+@media screen and (min-width: 569px) {
+  .header_title {
+    top: 55px;
+    left: 30px;
+    position: absolute;
+    font-family: 'Righteous';
+    width: 100%;
+  }
+  .header_title a {
+    position: relative;
+    color: #fff;
+    display: block;
+    text-shadow: 2px 2px 1px #000;
+  }
+  .header_title a span {
+    position: absolute;
+  }
+  .header_title a .hethersett {
+    font-size: 90px;
+  }
+  .header_title a .hawks {
+    font-size: 42px;
+    top: 85px;
+    left: 170px;
+  }
+  .header_title a .csc {
+    font-size: 38px;
+    top: 120px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    position: relative;
+  }
+  .banner {
+    position: relative;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .header_logo {
+    top: 125px;
+    left: 7.5%;
+  }
+  .header_logo img {
+    width: 15%;
+  }
+  .header_title {
+    top: 0px;
+    left: 30px;
+    position: absolute;
+    font-family: 'Righteous';
+    width: 100%;
+  }
+  .header_title a {
+    position: relative;
+    color: #fff;
+    display: block;
+    text-shadow: 2px 2px 1px #000;
+  }
+  .header_title a span {
+    position: absolute;
+  }
+  .header_title a .hethersett {
+    font-size: 90px;
+  }
+  .header_title a .hawks {
+    font-size: 42px;
+    top: 85px;
+    left: 170px;
+  }
+  .header_title a .csc {
+    font-size: 38px;
+    top: 120px;
+  }
+  .header_est {
+    position: absolute;
+    background: none;
+    top: 30px;
+    right: 200px;
+    z-index: 2;
+  }
+  .header_est p {
+    font-weight: 800;
+    font-family: 'Righteous';
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+  }
+  .header_jubilee {
+    position: absolute;
+    bottom: 0;
+    background: none;
+    width: 100%;
+  }
+  .header_jubilee p {
+    font-weight: 800;
+    font-size: 36px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 1px #000;
+    display: block;
+    text-align: center;
+  }
+  .menu {
+    position: relative;
+    height: 100px;
+  }
+  .menu_wrapper {
+    width: 100%;
+  }
+  .menu .main_menu {
+    height: 51px;
+    width: 100%;
+  }
+  .menu .main_menu_list {
+    height: 51px;
+    width: 100%;
+  }
+  .menu .main_menu_list_item {
+    display: table-cell;
+    width: auto;
+    border: none;
+  }
+  .menu .main_menu_list_item:first-child {
+    border: none;
+  }
+  .menu .main_menu_list_item a {
+    padding: 1em 1.5em;
+  }
+  .menu .main_menu_list_item.current_item {
+    background: #5492E7;
+  }
+  .menu .main_menu_list_item:hover .main_menu_list_item_submenu {
+    display: block;
+  }
+  .menu .main_menu_list_item_submenu {
+    position: absolute;
+    display: none;
+    padding: 0;
+    background: #fff;
+  }
+  .menu .main_menu_list_item_submenu > .main_menu_list_item {
+    display: block !important;
+    min-width: 300px;
+    border-bottom: 1px solid #0028CE;
+  }
+  .menu .main_menu_list_item_submenu > .main_menu_list_item a {
+    color: #0028CE;
+  }
+  .menu .main_menu_list_item_submenu > .main_menu_list_item a:hover {
+    color: #fff;
+  }
+  .main_menu_btn {
+    display: none;
+  }
+  .search {
+    text-align: left;
+    position: relative;
+    background-color: #004ec4;
+    margin: 0;
+  }
+  .search .search_form {
+    max-width: 1168px;
+    margin: 0 auto;
+  }
+  .search_input {
+    padding: 0 0 0 30px;
+    width: calc(100% - 120px);
+  }
+  .search .search_cancel {
+    display: table-cell;
+  }
+  .quick_links {
+    width: 10% !important;
+    float: right;
+    z-index: 1;
+  }
+  .quick_links .quick_facebook {
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 51px;
+    margin-right: 60px;
+  }
+  .quick_links .quick_facebook i {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .quick_links .quick_facebook span {
+    display: none;
+  }
+  .quick_links .quick_search {
+    position: relative;
+    float: left;
+    display: block !important;
+    height: 51px;
+    width: 50px;
+    background: none;
+    border: none;
+  }
+  .quick_links .quick_search i {
+    position: relative !important;
+    font-size: 24px !important;
+  }
+  .mason--search {
+    top: 0 !important;
+  }
+  .mason--search .menu .quick_links .quick_search {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header .banner .banner_wave {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .header .banner .banner_wave svg path {
+    fill: #0028CE;
+  }
+}

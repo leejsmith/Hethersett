@@ -1,0 +1,380 @@
+@import 'functions';
+@import 'reset';
+@import 'thematic';
+
+/* HEADER */
+
+.header {
+    width: 100%;
+}
+
+.banner {
+    font-size: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.header_logo {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 7.5%;
+    img {
+        width: 15%;
+    }
+}
+
+.header_title {
+    top: 55px;
+    left: 30px;
+    position: absolute;
+    font-family: 'Righteous';
+    width: 100%;
+    a {
+        position: relative;
+        color: #fff;
+        display: block;
+        text-shadow: 2px 2px 1px #000;
+        span {
+            position: absolute;
+        }
+        .hethersett {
+            font-size: 30px;
+        }
+        .hawks {
+            font-size: 18px;
+            top: 30px;
+            left: 60px;
+        }
+        .csc {
+            font-size: 24px;
+            top: 45px;
+        }
+    }
+}
+
+.header_est {
+    position: relative;
+    background: #fff;
+    p {
+        font-size: 28px;
+        font-weight: 600px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.header_jubilee {
+    position: relative;
+    background: #fff;
+    p {
+        font-size: 22px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.banner_wave {
+    display: none;
+}
+
+.quick_links {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    .quick_search {
+        display: none;
+    }
+    .quick_facebook,
+    .quick_search {
+        line-height: 32px;
+        font-size: 20px;
+        vertical-align: middle;
+        color: #fff;
+        text-decoration: none;
+        i {
+            font-size: 32px;
+            position: absolute;
+        }
+        span {
+            margin-left: 40px;
+        }
+    }
+}
+
+.search {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    &_wrapper {
+        font-size: 0;
+    }
+    &_input,
+    button {
+        background-color: #004ec4;
+        border: none;
+        padding: 0px 10px;
+        height: 50px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    &_button {
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    .search_cancel {
+        display: none;
+    }
+}
+
+.mason--menu {
+    .main_menu {
+        &_btn {
+            &_open {
+                display: none;
+            }
+            &_close {
+                display: block;
+            }
+        }
+    }
+    .menu {
+        top: 60px;
+    }
+}
+
+@include respond-to("mobilelandscape") {
+    .header_title {
+        top: 55px;
+        left: 30px;
+        position: absolute;
+        font-family: 'Righteous';
+        width: 100%;
+        a {
+            position: relative;
+            color: #fff;
+            display: block;
+            text-shadow: 2px 2px 1px #000;
+            span {
+                position: absolute;
+            }
+            .hethersett {
+                font-size: 90px;
+            }
+            .hawks {
+                font-size: 42px;
+                top: 85px;
+                left: 170px;
+            }
+            .csc {
+                font-size: 38px;
+                top: 120px;
+            }
+        }
+    }
+}
+
+@include respond-to("tabletportrait") {
+    .header {
+        position: relative;
+    }
+    .banner {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .header_logo {
+        top: 125px;
+        left: 7.5%;
+        img {
+            width: 15%;
+        }
+    }
+    .header_title {
+        top: 0px;
+        left: 30px;
+        position: absolute;
+        font-family: 'Righteous';
+        width: 100%;
+        a {
+            position: relative;
+            color: #fff;
+            display: block;
+            text-shadow: 2px 2px 1px #000;
+            span {
+                position: absolute;
+            }
+            .hethersett {
+                font-size: 90px;
+            }
+            .hawks {
+                font-size: 42px;
+                top: 85px;
+                left: 170px;
+            }
+            .csc {
+                font-size: 38px;
+                top: 120px;
+            }
+        }
+    }
+    .header_est {
+        position: absolute;
+        background: none;
+        top: 30px;
+        right: 200px;
+        z-index: 2;
+        p {
+            font-weight: 800;
+            font-family: 'Righteous';
+            font-size: 24px;
+            color: #fff;
+            text-shadow: 2px 2px 1px #000;
+        }
+    }
+    .header_jubilee {
+        position: absolute;
+        bottom: 0;
+        background: none;
+        width: 100%;
+        p {
+            font-weight: 800;
+            font-size: 36px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 1px #000;
+            display: block;
+            text-align: center;
+        }
+    }
+    .menu {
+        position: relative;
+        height: 100px;
+        &_wrapper {
+            width: 100%;
+        }
+        .main_menu {
+            height: 51px;
+            width: 100%;
+            &_list {
+                height: 51px;
+                width: 100%;
+                &_item {
+                    display: table-cell;
+                    width: auto;
+                    border: none;
+                    &:first-child {
+                        border: none;
+                    }
+                    a {
+                        padding: 1em 1.5em;
+                    }
+                    &.current_item {
+                        background: $sec;
+                    }
+                    &:hover {
+                        .main_menu_list_item_submenu {
+                            display: block;
+                        }
+                    }
+                    &_submenu {
+                        position: absolute;
+                        display: none;
+                        padding: 0;
+                        background: #fff;
+                        & > .main_menu_list_item {
+                            display: block !important;
+                            min-width: 300px;
+                            border-bottom: 1px solid $pri;
+                            a {
+                                color: $pri;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_menu_btn {
+        display: none;
+    }
+    .search {
+        text-align: left;
+        position: relative;
+        background-color: #004ec4;
+        margin: 0;
+        .search_form {
+            max-width: 1168px;
+            margin: 0 auto;
+        }
+        &_input {
+            padding: 0 0 0 30px;
+            width: calc(100% - 120px);
+        }
+        .search_cancel {
+            display: table-cell;
+        }
+    }
+    .quick_links {
+        width: 10% !important;
+        float: right;
+        z-index: 1;
+        .quick_facebook {
+            position: relative;
+            float: right;
+            width: 50px;
+            height: 51px;
+            margin-right: 60px;
+            i {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+            }
+            span {
+                display: none;
+            }
+        }
+        .quick_search {
+            position: relative;
+            float: left;
+            display: block !important;
+            height: 51px;
+            width: 50px;
+            background: none;
+            border: none;
+            i {
+                position: relative !important;
+                font-size: 24px !important;
+            }
+        }
+    }
+    .mason--search {
+        top: 0 !important;
+        .menu {
+            .quick_links {
+                .quick_search {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("tabletlandscape") {
+    .header .banner .banner_wave {
+        display: block;
+        position: absolute;
+        width: 100%;
+        svg path {
+            fill: $pri
+        }
+    }
+}

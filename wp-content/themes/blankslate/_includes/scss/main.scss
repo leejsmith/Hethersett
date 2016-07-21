@@ -1,0 +1,131 @@
+@import 'functions';
+@import 'reset';
+@import 'thematic';
+
+
+@import 'menu';
+@import 'header';
+@import 'news';
+/* Header Styles */
+
+@include respond-to("tabletportrait") {
+    .wrapper {
+        top: -50px;
+        transition: top .5s ease;
+    }
+}
+
+/* Main Styles */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+
+@include respond-to("tabletlandscape") {
+    .inner_wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+// CONTENT STYLING
+.container {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    background: #fff;
+    margin-top: -4px !important;
+    .content_title {
+        margin: 0;
+    }
+    .breadcrumbs {
+        margin: 10px 0;
+    }
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        content: "";
+        display: table;
+    }
+}
+
+.breadcrumbs {
+    margin: 0;
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.content {
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        content: "";
+        display: table;
+    }
+}
+
+@include respond-to("mobilelandscape") {
+    .container {
+        max-width: 1168px;
+        margin: 0 auto;
+    }
+}
+
+// FOOTER STYLING 
+.footer {
+    margin-top: 30px;
+    .logos {
+        width: 100%;
+        &_list {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            width: auto;
+            &_item {
+                display: inline-block;
+                padding: 0 20px;
+                &_image {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+// PAGE STYLING
+// CONTACT STYLING 
+.google_map {
+    width: 100%;
+    height: 200px;
+}
+
+@include respond-to("mobilelandscape") {
+    .google_map {
+        height: 300px;
+    }
+}
+
+@include respond-to("tabletportrait") {
+    .google_map {
+        height: 400px;
+    }
+}
+
+
+
+.clear {
+    clear: both;
+}

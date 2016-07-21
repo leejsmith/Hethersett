@@ -1,0 +1,12 @@
+$bgcolor:#081319;
+$pri:#0028CE;
+$sec:#5492E7;
+$text:#fff;
+
+$breakpoints: (
+  'mobileportrait':  ( min-width:  321px ),
+  'mobilelandscape': ( min-width:  569px ),
+  'tabletportrait':  ( min-width: 769px ),
+  'tabletlandscape':  ( min-width: 1025px )
+) !default;
+  
