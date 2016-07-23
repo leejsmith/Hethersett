@@ -212,6 +212,7 @@ span {
     border-bottom: 1px solid #0028CE;
   }
   .menu .main_menu_list_item_submenu > .main_menu_list_item a {
+    padding: 20px;
     color: #0028CE;
   }
   .menu .main_menu_list_item_submenu > .main_menu_list_item a:hover {
